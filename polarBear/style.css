@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+}
+body{
+  background-color:rgb(250 235 215 / 69%);
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 6px 7px rgb(0 0 0 / 44%);
+}
+header .left img{
+  width: 50px;
+}
+header ul{
+  display: flex;
+}
+header ul a{
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-weight: 600;
+}
+header .right ul a{
+  font-size: 18px;
+  color: #000;
+}
+
+
+
+#hero{
+  
+}
+#hero .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+#hero .top .left{
+  width: 45%;
+}
+#hero .top .right{
+  width: 50%;
+}
+#hero .top .right{
+  text-align: right;
+}
+#hero .top .right h1, #get h1{
+  font-size: 3rem;
+}
+#hero .top .right h1 span{
+  color: red;
+}
+#hero .top .right p{
+  font-size: 20px;
+  padding: 0.25rem 0;
+}
+
+
+#hero .bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .bottom a{
+  display: inline-block;
+  background-color: #fff;
+  color: rgb(51, 16, 239);
+  padding: 1rem;
+  margin: 0.25rem;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  transition: all 0.5s;
+}
+
+
+#get{
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 4rem 2rem;
+}
+#get .left, #get .right{
+  width: 50%;
+}
+#get .left{
+  padding-right: 3rem;
+}
+#get .left h1{
+  padding-bottom: 1rem;
+}
+#get .left p{
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 0.5rem 0;
+}
+
+
+footer {
+  background-color: rgb(255, 213, 6);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .top{
+  color: #f00;
+}
+footer .top p{
+  text-align: center;
+}
+
+footer .bottom{
+  padding-top: 1.5rem;
+}
+footer .bottom ul{
+  display: flex;
+}
+footer .bottom ul a{
+  padding: 0 0.75rem;
+  font-size: 20px;
+  color: #000;
+}
