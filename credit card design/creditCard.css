@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#creditCard {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.left {
+  width: 40%;
+  height: 100%;
+  margin-right: 10%;
+  background: #1A2980;
+  background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+  background: linear-gradient(to right, #26D0CE, #1A2980);
+  position: relative;
+}
+
+.right {
+  padding-left: 3rem;
+  width: 50%;
+}
+
+.left .card {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  border-radius: 0.5rem;
+}
+
+.left .cardFront {
+  top: 20%;
+  left: 2rem;
+  padding: 2rem;
+  background: #E55D87;
+  background: -webkit-linear-gradient(to left, #5FC3E4, #E55D87);
+  background: linear-gradient(to left, #5FC3E4, #E55D87);
+}
+
+.left .cardFront p {
+  margin-bottom: 1rem;
+  color: #1d0a0a;
+}
+
+.left .cardFront p.number {
+  letter-spacing: 1.2px;
+}
+
+.left .cardFront p.name,
+.left .cardFront p.expiry {
+  font-size: 13px;
+}
+
+.left .cardBack {
+  top: 50%;
+  right: -2rem;
+  background: #003973;
+  background: -webkit-linear-gradient(to right, #E5E5BE, #003973);
+  background: linear-gradient(to right, #E5E5BE, #003973);
+}
+
+.left .cardBack .cvvDiv {
+  background-color: #000;
+  height: 20px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.left .cardBack .cvvDiv .cvv {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 40px;
+  right: 2rem;
+  padding: 0.15rem 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.right form {
+  width: 300px;
+}
+
+.right input {
+  width: 100%;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+}
+
+.right select {
+  width: 49%;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+}

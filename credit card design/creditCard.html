@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card</title>
+  <link rel="stylesheet" href="creditCard.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="creditCard">
+      <div class="left">
+        <div class="card cardFront">
+          <p class="name"></p>
+          <p class="number"></p>
+          <p class="expiry">
+            <span class="month"></span> /
+            <span class="year"></span>
+          </p>
+        </div>
+        <div class="card cardBack">
+          <div class="cvvDiv">
+            <p class="cvv"></p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <form action="" method="post">
+          <input id="name" type="text" placeholder="Enter your full name"><br>
+          <input id="number" type="text" placeholder="Enter card number"><br>
+          <select name="" id="expiryMonth">
+            <option value="" selected disabled>Select Month</option>
+          </select>
+          <select name="" id="expiryYear">
+            <option value="" selected disabled>Select Year</option>
+          </select> <br>
+          <input id="cvv" type="text" placeholder="CVV"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      const expiryMonth = document.querySelector("#expiryMonth")
+      const expiryYear = document.querySelector("#expiryYear")
+
+      for (let i = 1; i <= 12; i++) {
+        let option = document.createElement("option");
+        let span = document.createElement("span");
+        if (i < 10) {
+          option.setAttribute("value", '0' + i)
+          span.innerHTML = '0' + i
+        }
+        else {
+          option.setAttribute("value", i)
+          span.innerHTML = i
+        }
+        option.appendChild(span)
+        expiryMonth.appendChild(option)
+      }
+
+      for (let i = 2032; i >= 2000; i--) {
+        let option = document.createElement("option");
+        let span = document.createElement("span");
+        option.setAttribute("value", i)
+        span.innerHTML = i
+
+        option.appendChild(span)
+        expiryYear.appendChild(option)
+      }
+    }
+
+
+    const form = document.querySelector("form")
+    form.onsubmit = function (e) {
+      e.preventDefault();
+      const name = document.querySelector("#name")
+      const number = document.querySelector("#number")
+      const expiryMonth = document.querySelector("#expiryMonth")
+      const expiryYear = document.querySelector("#expiryYear")
+      const cvv = document.querySelector("#cvv")
+
+      const nameExp = /^[a-zA-Z ]{3,20}$/
+      const numberExp = /^[0-9 ]{19}$/
+      const cvvExp = /^[0-9]{3}$/
+
+      // const emailExp = /^[a-zA-Z0-9\_\.\$]+\@[a-zA-Z0-9]+\.[a-zA-Z]{2,5}$/
+
+      if (checkInput(name, nameExp, 'Enter Only alphabets in your name')) {
+        if (checkInput(number, numberExp, 'Enter only numbers. Max length 16')) {
+          if (checkInput(cvv, cvvExp, 'Enter only numbers. Max length 3')) {
+            document.querySelector("p.name").innerHTML = name.value
+            document.querySelector("p.number").innerHTML = number.value
+            document.querySelector("span.month").innerHTML = expiryMonth.value
+            document.querySelector("span.year").innerHTML = expiryYear.value
+            document.querySelector("p.cvv").innerHTML = cvv.value
+          }
+        }
+      }
+    }
+
+
+    function checkInput(elem, regex, msg) {
+      if (elem.value.match(regex)) {
+        return true;
+      }
+      else {
+        alert(msg);
+        elem.focus();
+        return false;
+      }
+    }
+
+    number.oninput = function () {
+      let len = number.value.length
+      if (len <= 4) return;
+      else {
+        let arr = number.value.split('')
+        if (len > 4 && len < 8) {
+          if (arr[4] !== ' ')
+            arr.splice(4, 0, ' ');
+        }
+        else if (len > 9 && len < 13) {
+          if (arr[9] !== ' ')
+            arr.splice(9, 0, ' ');
+        }
+        else if (len > 14 && len < 18) {
+          if (arr[14] !== ' ')
+            arr.splice(14, 0, ' ');
+        }
+
+        number.value = arr.join('')
+
+      }
+    }
+
+    
+  </script>
+</body>
+
+</html>
