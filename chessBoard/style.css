@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3a227;
+}
+#board{
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #000;
+}
+#board .row{
+  display: flex;
+  flex-wrap: wrap;
+  height: 12.5%;
+}
+.square{
+  width: 12.5%;
+  height: 100%;
+}
+#board .row:nth-of-type(2n) .square:nth-of-type(2n), #board .row:nth-of-type(2n+1) .square:nth-of-type(2n+1){
+  background-color: #fff;
+}
