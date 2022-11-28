@@ -30,6 +30,9 @@
 .square img{
   width: 50%;
 }
+.square img.special{
+  height: 80%;
+}
 #board .row:nth-of-type(2n) .square:nth-of-type(2n), #board .row:nth-of-type(2n+1) .square:nth-of-type(2n+1){
   background-color: #fff;
 }
