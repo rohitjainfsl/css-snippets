@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chess Board</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div id="wrapper">
     <div id="board">
       <div class="row">
-        <div class="square"><img src="images/rook-black-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/knight-black-transformed.webp" alt=""></div>
-        <div class="square"><img class="special" src="images/bishop-black-transformed.webp" alt=""></div>
-        <div class="square"><img class="special" src="images/queen-black-transformed.webp" alt=""></div>
-        <div class="square"><img class="special" src="images/king-black-transformed.webp" alt=""></div>
-        <div class="square"><img class="special" src="images/bishop-black-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/knight-black-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/rook-black-transformed.webp" alt=""></div>
+        <div class="square"><i class="fa-solid fa-chess-rook"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-knight"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-bishop"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-queen"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-king"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-bishop"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-knight"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-rook"></i></div>
       </div>
       <div class="row">
-        <div class="square"><img src="images/pawn-black-transformed.png" alt=""></div>
-        <div class="square"><img src="images/pawn-black-transformed.png" alt=""></div>
-        <div class="square"><img src="images/pawn-black-transformed.png" alt=""></div>
-        <div class="square"><img src="images/pawn-black-transformed.png" alt=""></div>
-        <div class="square"><img src="images/pawn-black-transformed.png" alt=""></div>
-        <div class="square"><img src="images/pawn-black-transformed.png" alt=""></div>
-        <div class="square"><img src="images/pawn-black-transformed.png" alt=""></div>
-        <div class="square"><img src="images/pawn-black-transformed.png" alt=""></div>
-      </div>
-      <div class="row">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <div class="square"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square"><i class="fa-solid fa-chess-pawn"></i></div>
       </div>
       <div class="row">
         <div class="square"></div>
@@ -72,26 +66,37 @@
         <div class="square"></div>
       </div>
       <div class="row">
-        <div class="square"><img src="images/pawn-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/pawn-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/pawn-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/pawn-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/pawn-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/pawn-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/pawn-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/pawn-white-transformed.webp" alt=""></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
       </div>
       <div class="row">
-        <div class="square"><img src="images/rook-white-transformed.png" alt=""></div>
-        <div class="square"><img src="images/knight-white-transformed.png" alt=""></div>
-        <div class="square"><img src="images/bishop-white-transformed.webp" alt=""></div>
-        <div class="square"><img class="special" class="special" src="images/queen-white-transformed.webp" alt=""></div>
-        <div class="square"><img class="special" class="special" src="images/king-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/bishop-white-transformed.webp" alt=""></div>
-        <div class="square"><img src="images/knight-white-transformed.png" alt=""></div>
-        <div class="square"><img src="images/rook-white-transformed.png" alt=""></div>
+        <div class="square white"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-pawn"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-pawn"></i></div>
+      </div>
+      <div class="row">
+        <div class="square white"><i class="fa-solid fa-chess-rook"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-knight"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-bishop"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-queen"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-king"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-bishop"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-knight"></i></div>
+        <div class="square white"><i class="fa-solid fa-chess-rook"></i></div>
       </div>
     </div>
   </div>
 </body>
+
 </html>

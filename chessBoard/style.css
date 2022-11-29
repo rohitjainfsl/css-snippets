@@ -13,7 +13,7 @@
   width: 1000px;
   height: 1000px;
   margin: 0 auto;
-  background-color: #000;
+  background-color: #e2dddd;
 }
 #board .row{
   display: flex;
@@ -27,15 +27,14 @@
   justify-content: center;
   align-items: center;
 }
-.square img{
+.square i{font-size: 300%;}
+.square.white i{color: #fff;}
+/* .square img{
   width: 50%;
 }
 .square img.special{
   height: 80%;
-}
+} */
 #board .row:nth-of-type(2n) .square:nth-of-type(2n), #board .row:nth-of-type(2n+1) .square:nth-of-type(2n+1){
-  background-color: #fff;
+  background-color: #a2a0a0;
 }
-
-
-Pseudo class
