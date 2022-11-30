@@ -107,7 +107,7 @@ header nav ul a{
   align-items: center;
   flex-direction: column;
 }
-#meet h1, #commitment h1{
+#meet h1, #commitment h1, #topTalent h1{
   font-size: 4rem;
   margin-bottom: 4rem;
 }
@@ -194,4 +194,32 @@ header nav ul a{
 }
 #commitment .commit p{
   font-size: 22px;
+}
+
+
+
+#topTalent{
+  padding: 5rem 3rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+#topTalent .topTalent-wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+#topTalent .topTalent-wrapper .initiative-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+#topTalent .topTalent-wrapper .initiative-wrapper .initiative{
+  width: 45%;
+  margin: 2.5%;
+  text-align: left;
+}
+#topTalent .topTalent-wrapper .initiative-wrapper .initiative img{
+  width: 60px;
+  margin-bottom: 1.5rem;
+}
+#topTalent .topTalent-wrapper .initiative-wrapper .initiative p{
+  line-height: 1.5;
 }
