@@ -107,7 +107,7 @@ header nav ul a{
   align-items: center;
   flex-direction: column;
 }
-#meet h1{
+#meet h1, #commitment h1{
   font-size: 4rem;
   margin-bottom: 4rem;
 }
@@ -163,4 +163,35 @@ header nav ul a{
   background-color: #ccc;
   border-radius: 50%;
   margin: 0 0.25rem;
+}
+
+
+
+#commitment{
+  background: url(images/earthBackground.jpeg) no-repeat scroll center / cover;
+  padding: 5rem 3rem;
+  text-align: center;
+  color: #fff;
+}
+#commitment .top, #commitment .bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#commitment .commit{
+  background-color: rgba(0,0,0,0.5);
+  padding: 2rem;
+  margin: 2rem;
+  width: 25%;
+  border-radius: 1.5rem;
+}
+#commitment .commit img{
+  width: 100px;
+  margin-bottom: 3rem;
+}
+#commitment .commit h2{
+  margin-bottom: 1rem;
+}
+#commitment .commit p{
+  font-size: 22px;
 }
