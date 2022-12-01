@@ -1,60 +1,70 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
-a{text-decoration: none;}
-h1,h2,h3,h4,h5,h6{font-weight: 900;}
-ul{list-style: none;}
-header{
+
+a {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 900;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
 }
-header #logo img{
+header #logo img {
   width: 140px;
 }
-header nav ul{
+header nav ul {
   display: flex;
   list-style: none;
 }
-header nav ul a{
+header nav ul a {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   color: #000;
   font-size: 18px;
-  font-weight: 900;
 }
-.blue-nav{
+.blue-nav {
   color: #fff;
-  background-color: rgb(71,26,255);
+  background-color: rgb(71, 26, 255);
   border-radius: 0.5rem;
   padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-right: 1.5rem;  
+  font-weight: 900;
 }
 
 
 
-#hero{
+#hero {
   display: flex;
   height: calc(100vh - 96px);
   padding-left: 2rem;
   padding-right: 2rem;
 }
-#hero .left{
+#hero .left {
   width: 45%;
 }
-#hero .left{
+#hero .left {
   padding-top: 6rem;
   padding-right: 4rem;
 }
-#hero .left h1{
+#hero .left h1 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
 }
-#hero .left p{
+#hero .left p {
   line-height: 1.5;
 }
 #hero .left a {
@@ -74,17 +84,17 @@ header nav ul a{
 
 
 
-#companies{
+#companies {
   padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#companies h1{
+#companies h1 {
   margin-bottom: 2rem;
 }
-#companies .companies-list{
+#companies .companies-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,13 +103,13 @@ header nav ul a{
   width: 170px;
   margin: 0 1.25rem;
 }
-#companies .companies-list img:last-of-type{
+#companies .companies-list img:last-of-type {
   width: 80px;
 }
 
 
 
-#meet{
+#meet {
   margin-top: 6rem;
   margin-bottom: 3rem;
   display: flex;
@@ -107,43 +117,47 @@ header nav ul a{
   align-items: center;
   flex-direction: column;
 }
-#meet h1, #commitment h1, #topTalent h1, #hireThroughUs h1{
+#meet h1,
+#commitment h1,
+#topTalent h1,
+#hireThroughUs h1 {
   font-size: 4rem;
   margin-bottom: 4rem;
 }
-#meet .talents{
+#meet .talents {
   display: flex;
   width: 75%;
 }
-#meet .talents .talent{
+#meet .talents .talent {
   width: 30%;
   margin: 0 1.5%;
   padding: 2rem;
   border: 1px solid;
   border-radius: 1rem;
 }
-#meet .talents .talent .talent-img, #meet .talents .talent .credentials{
+#meet .talents .talent .talent-img,
+#meet .talents .talent .credentials {
   text-align: center;
   margin-bottom: 1rem;
 }
-#meet .talents .talent .credentials{
+#meet .talents .talent .credentials {
   line-height: 2;
 }
-#meet .talents .talent .credentials p{
+#meet .talents .talent .credentials p {
   font-size: 90%;
   color: #8a8585;
 }
-#meet .talents .talent img{
+#meet .talents .talent img {
   width: 120px;
   height: 120px;
 }
-#meet .talents .talent .talent-techstack{
+#meet .talents .talent .talent-techstack {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem 0;
 }
-#meet .talents .talent .talent-techstack li{
+#meet .talents .talent .talent-techstack li {
   background-color: #676565;
   padding: 0.5rem;
   margin: 0.35rem 0.25rem;
@@ -151,13 +165,13 @@ header nav ul a{
   font-size: 80%;
   color: #fff;
 }
-#meet .dots{
+#meet .dots {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0.5rem 0;
 }
-#meet .dots .dot{
+#meet .dots .dot {
   width: 8px;
   height: 8px;
   background-color: #ccc;
@@ -167,92 +181,141 @@ header nav ul a{
 
 
 
-#commitment{
+#commitment {
   background: url(images/earthBackground.jpeg) no-repeat scroll center / cover;
   padding: 5rem 3rem;
   text-align: center;
   color: #fff;
 }
-#commitment .top, #commitment .bottom{
+#commitment .top,
+#commitment .bottom {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#commitment .commit{
-  background-color: rgba(0,0,0,0.5);
+#commitment .commit {
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   margin: 2rem;
   width: 25%;
   border-radius: 1.5rem;
 }
-#commitment .commit img{
+#commitment .commit img {
   width: 100px;
   margin-bottom: 3rem;
 }
-#commitment .commit h2{
+#commitment .commit h2 {
   margin-bottom: 1rem;
 }
-#commitment .commit p{
+#commitment .commit p {
   font-size: 22px;
 }
 
 
 
-#topTalent{
+#topTalent {
   padding: 5rem 3rem;
   text-align: center;
   background-color: #f1f1f1;
 }
-#topTalent .topTalent-wrapper{
+#topTalent .topTalent-wrapper {
   width: 70%;
   margin: 0 auto;
 }
-#topTalent .topTalent-wrapper .initiative-wrapper{
+#topTalent .topTalent-wrapper .initiative-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-#topTalent .topTalent-wrapper .initiative-wrapper .initiative{
+#topTalent .topTalent-wrapper .initiative-wrapper .initiative {
   width: 45%;
   margin: 2.5%;
   text-align: left;
 }
-#topTalent .topTalent-wrapper .initiative-wrapper .initiative img{
+#topTalent .topTalent-wrapper .initiative-wrapper .initiative img {
   width: 60px;
   margin-bottom: 1.5rem;
 }
-#topTalent .topTalent-wrapper .initiative-wrapper .initiative p{
+#topTalent .topTalent-wrapper .initiative-wrapper .initiative p,
+#hero .left p,
+#hireThroughUs .hireThroughUs-wrapper .right .pointer .content p {
   line-height: 1.5;
 }
 
 
 
-#hireThroughUs{
+#hireThroughUs {
   padding: 2rem;
-  text-align: center;  
+  padding-bottom: 6rem;
+  text-align: center;
 }
-#hireThroughUs .hireThroughUs-wrapper{
+#hireThroughUs .hireThroughUs-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#hireThroughUs .hireThroughUs-wrapper .left{
+#hireThroughUs .hireThroughUs-wrapper .left {
   width: 50%;
 }
-#hireThroughUs .hireThroughUs-wrapper .right{
-  width: 45%;
-  margin-left: 5%;
+#hireThroughUs .hireThroughUs-wrapper .right {
+  width: 40%;
+  margin-left: 9%;
 }
-#hireThroughUs .hireThroughUs-wrapper img{
+#hireThroughUs .hireThroughUs-wrapper img {
   width: 100%;
 }
-#hireThroughUs .hireThroughUs-wrapper .right .pointer{
+#hireThroughUs .hireThroughUs-wrapper .right .pointer {
   display: flex;
+  text-align: left;
+  margin-bottom: 3rem;
 }
-#hireThroughUs .hireThroughUs-wrapper .right .pointer .number{
-  height: 60px;
-  width: 60px;
-  border: 5px solid #000;
+#hireThroughUs .hireThroughUs-wrapper .right .pointer .number {
+  height: 70px;
+  width: 70px;
+  margin-right: 2rem;
+  border: 8px solid #471aff;
+  color: #471aff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  font-size: 3rem;
+  font-weight: 900;
+}
+#hireThroughUs .hireThroughUs-wrapper .right .pointer .content {
+  width: 75%;
+}
+
+
+
+
+#joinUs {
+  background-color: #6032ff;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#joinUs .joinUs-wrapper {
+  width: 50%;
+}
+#joinUs h1 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+#joinUs a {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 900;
+}
+#joinUs span{
+  display: inline-block;
+  margin: 0 1rem;
+}
+#joinUs .white-link{
+  border: 3px solid #fff;
+  border-radius: 0.5rem;
 }
