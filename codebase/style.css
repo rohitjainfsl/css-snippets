@@ -319,3 +319,47 @@ header nav ul a {
   border: 3px solid #fff;
   border-radius: 0.5rem;
 }
+
+
+
+footer{
+  background-color: #4719ff;
+  color: #fff;
+  padding: 4rem 5rem;
+}
+footer img{
+  width: 180px;
+}
+footer .top{
+  border-bottom: 1px solid #fff;
+}
+footer .bottom{
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom .left{
+  font-size: 70%;
+}
+footer .bottom .left p{
+  margin: 0.25rem 0;
+}
+footer .bottom .left p.grey{
+  color: #c9c0c0;
+}
+footer .bottom .socialIcons{
+  margin-bottom: 1rem;
+}
+footer .bottom .socialIcons i{
+  color: #fff;
+  font-size: 22px;
+  padding: 0.5rem;
+}
+footer .bottom ul{
+  display: flex;
+}
+footer .bottom ul a{
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 90%;
+}
