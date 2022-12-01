@@ -5,7 +5,7 @@
   font-weight: 400;
 }
 a{text-decoration: none;}
-  ,h2,h3,h4,h5,h6{font-weight: 900;}
+h1,h2,h3,h4,h5,h6{font-weight: 900;}
 ul{list-style: none;}
 header{
   display: flex;
@@ -107,7 +107,7 @@ header nav ul a{
   align-items: center;
   flex-direction: column;
 }
-#meet h1, #commitment h1, #topTalent h1{
+#meet h1, #commitment h1, #topTalent h1, #hireThroughUs h1{
   font-size: 4rem;
   margin-bottom: 4rem;
 }
@@ -222,4 +222,37 @@ header nav ul a{
 }
 #topTalent .topTalent-wrapper .initiative-wrapper .initiative p{
   line-height: 1.5;
+}
+
+
+
+#hireThroughUs{
+  padding: 2rem;
+  text-align: center;  
+}
+#hireThroughUs .hireThroughUs-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hireThroughUs .hireThroughUs-wrapper .left{
+  width: 50%;
+}
+#hireThroughUs .hireThroughUs-wrapper .right{
+  width: 45%;
+  margin-left: 5%;
+}
+#hireThroughUs .hireThroughUs-wrapper img{
+  width: 100%;
+}
+#hireThroughUs .hireThroughUs-wrapper .right .pointer{
+  display: flex;
+}
+#hireThroughUs .hireThroughUs-wrapper .right .pointer .number{
+  height: 60px;
+  width: 60px;
+  border: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
