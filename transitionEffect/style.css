@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+#effect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#effect .box{
+  background-color: #3b5998;
+  color: #fff;
+  border-radius: 1rem;
+  width: 45%;
+  margin: 2rem 1rem;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+#effect .box:before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(189, 187, 50, 0.2);
+  transition: all 0.5s;
+}
+#effect .box:hover:before{
+  top: 0;
+}
+#effect .box img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+#effect .box h3, #effect .box .designation{
+  margin-bottom: 1rem;
+}
+#effect .box ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+#effect .box ul li i{
+  display: inline-block;
+  padding: 0 0.25rem;
+  color: #ff0;
+}
+
+
+#effect .box .circle{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #0d3ca2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -50px;
+  right: -42px;
+}
+#effect .box .circle i {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 26px;
+  left: 35px;
+}
