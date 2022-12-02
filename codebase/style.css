@@ -238,7 +238,7 @@ header nav ul a {
 }
 #topTalent .topTalent-wrapper .initiative-wrapper .initiative p,
 #hero .left p,
-#hireThroughUs .hireThroughUs-wrapper .right .pointer .content p {
+#hireThroughUs .hireThroughUs-wrapper .right .pointer .content p, #ourServices .services-wrapper .service p {
   line-height: 1.5;
 }
 
@@ -363,4 +363,72 @@ footer .bottom ul a{
   display: inline-block;
   padding: 1rem;
   font-size: 90%;
+}
+
+
+
+#ourServices{
+  padding: 4rem 1rem;
+}
+#ourServices h2{
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+#ourServices .services-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+#ourServices .services-wrapper .service{
+  width: 25%;
+  margin: 3% 1%;
+  padding: 2rem;
+  padding-top: 4rem;
+  text-align: center;
+  border: 3px solid #e3e3e3;
+  border-radius: 1rem;
+  position: relative;
+}
+#ourServices .services-wrapper .service .icon i {
+  font-size: 3rem;
+  color: #4719ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  border: 3px solid #e3e3e3;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20%;
+  left: 40%;
+}
+#ourServices .services-wrapper .service h3{
+  margin-bottom: 1rem;
+}
+
+
+
+#projectIdea{
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projectIdea h2{
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+#projectIdea p{
+  margin-bottom: 1rem;
+}
+#projectIdea .blue-nav{
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-size: 18px;
 }
