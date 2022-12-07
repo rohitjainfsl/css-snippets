@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #495057;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+
+#exploreTopics{
+  background-color: #cdc1ff;
+  
+}
+.dataDefine {
+  padding: 3rem 15rem;
+  display: flex;
+}
+#rightJob{
+
+}
+#postJob{
+  background-color: #cdc1ff;
+}
+.dataDefine .left{
+  width: 45%;
+}
+.dataDefine .right{
+  width: 55%;
+}
+.dataDefine .left h1{
+  font-size: 1.75rem;
+  line-height: 1.85;
+}
+#exploreTopics .left h1 {
+  padding-right: 10rem;
+}
+.dataDefine .right h5{
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.dataDefine .right ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.dataDefine .right ul li{
+  border: 1px solid #343a40;
+  border-radius: 3.5rem;
+  padding: .85rem 1rem;
+  margin: 0.15rem;
+}
+
+#rightPeople{
+  background-color: #e5d9f2;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+#rightPeople .left, #rightPeople .right{
+  width: 50%;
+}
+#rightPeople .right img{
+  width: 350px;
+}
+#rightPeople .left h1{
+  color: #7371fc;
+  font-size: 2rem;
+}
+#rightPeople .left p{
+  font-size: 1.25rem;
+}
