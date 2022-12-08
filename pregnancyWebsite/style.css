@@ -8,3 +8,11 @@ a{
   display: inline-block;
 }
 ul{list-style: none;}
+
+#secondary .navbar-brand img{
+  width:100px
+}
+#secondary ul li a{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
