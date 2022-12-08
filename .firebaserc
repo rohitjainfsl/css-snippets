@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "codebase-clone"
-  }
+    "default": "codebase-clone",
+    "garbhaayu": "garbhaayu"
+  },
+  "targets": {},
+  "etags": {}
 }
