@@ -14,6 +14,10 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 900;
 }
 
+#secondary{
+  padding-top: 0;
+  padding-bottom: 0;
+}
 #secondary .navbar-brand img{
   width:100px
 }
@@ -32,7 +36,10 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-
+#features img{
+  width: 200px;
+  height: 200px;
+}
 
 .circle
 {
@@ -41,16 +48,6 @@ h1,h2,h3,h4,h5,h6{
   overflow:hidden;
   width:70%;
   height:70%;
-}
-
-
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
 }
 
 .fa:hover {
