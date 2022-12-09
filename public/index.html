@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
-
+  <link rel="shortcut icon" href="images/logo-final.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,7 +27,7 @@
           <a class="navbar-brand" href="#">
             <img src="images/logo-final.png" alt="Logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
       </nav>
 
 
-      <nav id="primary" class="navbar navbar-expand-lg bg-danger text-white">
+      <nav id="primary" class="navbar navbar-expand-md bg-danger text-white">
         <div class="container">
           <div class="row w-100 justify-content-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar"
@@ -57,9 +57,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="primaryNavbar">
-              <ul class="d-flex justify-content-center w-100 mb-2 mb-lg-0">
+              <ul class="d-md-flex justify-content-center w-100 mb-0 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Blog</a>
+                  <a class="nav-link" aria-current="page" href="https://digitalvrld.wordpress.com/2022/12/07/garbha-sanskar/" target="_blank">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -72,16 +72,25 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Subscription</a>
+                  <a class="nav-link"  href="#">Subscription</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">About</a>
+                  <a class="nav-link"  href="#">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                  <a class="nav-link"  href="#">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">My Account</a>
+                  <a class="nav-link"  href="#">My Account</a>
+                </li>
+                <li class="nav-item d-block d-md-none">
+                  <a class="py-2"  href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="nav-item d-grid d-md-none py-2">
+                  <a class="btn btn-light" href="#">Log in</a>
+                </li>
+                <li class="nav-item d-grid d-md-none py-2">
+                  <a class="btn btn-outline-dark">Sign up</a>
                 </li>
               </ul>
             </div>
@@ -91,12 +100,13 @@
     </header>
 
 
-    <section id="hero">
-      <div class="container py-5">
+    <section id="hero" class="py-3">
+      <div class="container justify-content-center py-5">
         <div class="row align-items-center">
           <div class="col-md-5">
-            <h1><span>We understand not everyday of your pregnancy is easy,<br>therefore we are here with</span>
+            <h1 class="mb-4"><span>We understand not everyday of your pregnancy is easy,<br>therefore we are here with</span>
               limitless care.</h1>
+            <a href="" class="btn btn-lg btn-outline-dark cta py-3 px-4">Get your free trial today <i class="fa-solid fa-arrow-right-long ps-2"></i></a>
           </div>
           <div class="col-md-7">
             <img src="images/banner-png.png" class="img-fluid" alt="">
@@ -106,19 +116,39 @@
     </section>
 
 
-    <section id="features">
-      <div class="container-fluid bg-dark">
-        <div class="row">
-          <div class="col-9 pt-1"><button class="btn btn-primary">Get your free trial today.</button></div>
-          <div class="col-3">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-google"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+    <section id="features" class="py-5">
+      <div class="container">
+        <div class="text-center pt-sm-5 pb-4">
+          <h1>Services</h1>
+        </div>
+        <div class="row flex-wrap">
+          <div class="col-sm-4 text-center my-4">
+            <a href=""><img src="images/diet-plans.jpg" class="rounded-circle img-fluid" alt=""></a>
+            <h5 class="my-4"><a href="" class="text-dark">Diet Plans</a></h5>
+          </div>
+          <div class="col-sm-4 text-center my-4">
+            <a href=""><img src="images/in-home-services.jpg" class="rounded-circle img-fluid" alt=""></a>
+            <h5 class="my-4"><a href="" class="text-dark">In-Home Services</a></h5>
+          </div>
+          <div class="col-sm-4 text-center my-4">
+            <a href=""><img src="images/ayurveda.jpg" class="rounded-circle img-fluid" alt=""></a>
+            <h5 class="my-4"><a href="" class="text-dark">Ayurvedic Consultation</a></h5>
+          </div>
+          <div class="col-sm-4 text-center my-4">
+            <a href=""><img src="images/yoga.jpg" class="rounded-circle img-fluid" alt=""></a>
+            <h5 class="my-4"><a href="" class="text-dark">Yoga Classes</a></h5>
+          </div>
+          <div class="col-sm-4 text-center my-4">
+            <a href=""><img src="images/webinars.jpg" class="rounded-circle img-fluid" alt=""></a>
+            <h5 class="my-4"><a href="" class="text-dark">Webinars</a></h5>
+          </div>
+          <div class="col-sm-4 text-center my-4">
+            <a href=""><img src="images/audio-video.jpg" class="rounded-circle img-fluid" alt=""></a>
+            <h5 class="my-4"><a href="" class="text-dark">Audio / Video Aids</a></h5>
           </div>
         </div>
       </div>
-      <div class="container-fluid border border-dark">
+      <!-- <div class="container border border-dark">
         <div class="row pt-2">
           <div class="col-2 p-2 border text-center">
             <img class="circle" src="images/logo-final.png" alt=""><br>
@@ -146,7 +176,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
     </section>
 
 
