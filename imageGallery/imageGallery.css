@@ -67,3 +67,10 @@ img{
   height: 100%;
   opacity: 1;
 }
+.social a{
+  transition: all 0.5s;
+}
+.social a:hover{
+  transform: rotate(360deg) scale(1.4);
+  text-shadow: 0 0 3px rgba(255,255,255,0.4);
+}
