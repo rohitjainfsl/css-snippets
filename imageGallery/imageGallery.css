@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#gallery{
+  width: 70%;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gal{
+  width: 28%;
+  height: 200px;
+  margin: 0.75rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+.gal:hover img{
+  transform: scale(1.6);
+}
+.gal:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(0,0,0,0.5);
+  transition: all 0.5s;
+}
+.gal:hover:before {
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+}
+.social {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 2;
+  opacity: 1;
+  overflow: hidden;
+}
+.social i{
+  color: #fff;
+  font-size: 2rem;
+  padding: 0 0.25rem;
+}
+.gal:hover .social{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
