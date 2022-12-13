@@ -26,3 +26,28 @@ header ul a{
   margin: 0 0.25rem;
   font-weight: 700;
 }
+
+
+
+#hero{
+  background: url(images/bubbles.svg) center -138px / 100% 1068px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+  padding: 6rem 2rem 0;
+  display: flex;
+}
+#hero .left{
+  width: 40%;
+}
+#hero .right{
+  width: 60%;
+}
+#hero .left .phone{
+  position: relative;
+  width: 290px;
+}
+#hero .left .phone .phoneScreen {
+  position: absolute;
+  left: 0;
+  top: 54px;
+  width: 100%;
+  padding: 0 0.5rem;
+}
