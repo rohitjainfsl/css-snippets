@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.face{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #4d4c4c;
+  position: relative;
+  animation: rotateFace 6s linear;
+}
+.face div{
+  position: absolute;
+  border-radius: 50%;
+}
+.leftEyebrow{
+  width: 30px;
+  height: 10px;
+  border-top: 1px solid;
+  top: 40px;
+  left: 30px;
+}
+.rightEyebrow{
+  width: 30px;
+  height: 10px;
+  border-top: 1px solid;
+  top: 40px;
+  left: 130px;
+}
+.leftEye{
+  width: 20px;
+  height: 50px;
+  border: 1px solid;
+  top: 50px;
+  left: 35px;
+  overflow: hidden;
+}
+.rightEye{
+  width: 20px;
+  height: 50px;
+  border: 1px solid;
+  top: 50px;
+  left: 135px;
+  overflow: hidden;
+}
+.putli{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+  top: 30px;
+  left: 0px;
+}
+.nose{
+  width: 7px;
+  height: 40px;
+  border: 1px solid;
+  top: 90px;
+  left: 90px;
+}
+.mouth{
+  width: 50px;
+  height: 20px;
+  border-bottom: 1px solid;
+  top: 140px;
+  left: 70px;
+  animation: smile 1s 6s linear;
+}
+
+
+@keyframes rotateFace {
+  0%{transform: rotate(0); left: 0;}
+  50%{transform: rotate(180deg); left: 500px;}
+  100%{transform: rotate(0); left: 0;}
+}
+
+@keyframes smile {
+  0%{width: 0; left: 95px;}
+  100%{width: 50px; left: 70px;}
+}
