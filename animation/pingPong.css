@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper{
+  height: 100vh;
+  background-color: blueviolet;
+}
+#wrapper, #pingpong-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pingpong-wrapper{
+  width: 40%;
+  height: 300px;
+  background-color: #fff;
+  position: relative;
+}
+#pingpong-wrapper:before, #pingpong-wrapper:after{
+  content: '';
+  position: absolute;
+  background-color: #000;
+  height: 50%;
+  width: 40px;
+}
+#pingpong-wrapper:before{
+  top: 0;
+  left: 0;
+  animation: moveLeftFrame 4s linear infinite;
+}
+#pingpong-wrapper:after{
+  bottom: 0;
+  right: 0;
+  animation: moveRightFrame 4s linear infinite;
+}
+#pingpong-wrapper .ball{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  animation: moveBall 4s linear infinite;
+}
+@keyframes moveBall {
+  0%{left: 40px;}
+  50%{left: calc(100% - 80px)}
+  100%{left: 40px;}
+}
+@keyframes moveLeftFrame{
+  0%{top: 0;}
+  50%{top: calc(100% - 150px);}
+  100%{top: 0;}
+}
+@keyframes moveRightFrame{
+  0%{bottom: 0;}
+  50%{bottom: calc(100% - 150px);}
+  100%{bottom: 0;}
+}
