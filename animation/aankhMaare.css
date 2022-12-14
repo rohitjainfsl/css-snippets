@@ -21,6 +21,7 @@
   border-top: 1px solid;
   top: 40px;
   left: 30px;
+  animation: aankhMaarnaSupport 1s 6s linear;
 }
 .rightEyebrow{
   width: 30px;
@@ -36,6 +37,7 @@
   top: 50px;
   left: 35px;
   overflow: hidden;
+  animation: aankhMaarna 1s 6s linear;
 }
 .rightEye{
   width: 20px;
@@ -48,10 +50,9 @@
 .putli{
   width: 20px;
   height: 20px;
-  border-radius: 50%;
   background-color: #000;
   top: 30px;
-  left: 0px;
+  left: 2px;
 }
 .nose{
   width: 7px;
@@ -66,14 +67,26 @@
   border-bottom: 1px solid;
   top: 140px;
   left: 70px;
-  animation: smile 1s 6s linear;
+  animation: smile 1s 7.5s linear;
 }
 
 
 @keyframes rotateFace {
-  0%{transform: rotate(0); left: 0;}
-  50%{transform: rotate(180deg); left: 500px;}
-  100%{transform: rotate(0); left: 0;}
+  0%{transform: rotate(0); left: 0; background-color: #fff;}
+  50%{transform: rotate(180deg); left: calc(100% - 200px); background-color: #f00;}
+  100%{transform: rotate(0); left: 0; background-color: #fff;}
+}
+
+@keyframes aankhMaarna {
+  0%{height: 50px; top: 50px;}
+  50%{height: 0; top: 75px;}
+  100%{height: 50px; top: 50px;}
+}
+
+@keyframes aankhMaarnaSupport {
+  0%{border-radius: 50%;  top: 40px;}
+  50%{border-radius: 0; top: 65px;}
+  100%{border-radius: 50%; top: 40px;}
 }
 
 @keyframes smile {
