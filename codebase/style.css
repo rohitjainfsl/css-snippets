@@ -50,6 +50,7 @@ header nav ul a {
 
 #hero {
   display: flex;
+  align-items: center;
   height: calc(100vh - 96px);
   padding-left: 2rem;
   padding-right: 2rem;
@@ -457,4 +458,39 @@ footer .bottom ul a{
   border-radius: 2rem;
   font-weight: 500;
   font-size: 18px;
+}
+
+
+
+
+@media all and (max-width: 1175px){
+  .right img{
+    width: 100%;
+  }
+}
+
+@media all and (max-width:970px){
+  #companies .companies-list {
+    flex-wrap: wrap;
+  }
+  #meet .talents{
+    width:90%;
+  }
+  #joinUs .joinUs-wrapper{
+    width: 70%;
+  }
+  #hero{
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  #hero .left, #hero .right{width: 100%;}
+
+}
+
+@media all and (max-width: 840px){
+  #meet .talents{flex-wrap: wrap;}
+  #meet .talents .talent{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
 }
