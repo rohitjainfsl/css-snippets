@@ -1,0 +1,24 @@
+.justified{
+  text-align: justify;
+}
+.logo img{
+  width: 120px;
+}
+.navbar .nav-link{
+  color: #fff;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+  color: #ff9d8f;
+}
+
+#banner{
+  background: linear-gradient(180deg, #E6F0FF 90%, #FFFFFF 100%);
+}
+#banner .col-sm-6:first-of-type img{
+  width: 85%;
+}
+
+
+#fullPotential{
+  background-color: #E9F7F7;
+}
