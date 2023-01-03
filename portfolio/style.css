@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+  font-weight: 400;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+
+#whatIDo{
+  padding: 8rem 3rem;
+  color: #fff;
+  background: url(images/bg-1.jpg) no-repeat scroll center / cover;
+}
+#whatIDo .intro h1{
+  font-size: 2rem;
+  padding: 1rem 0;
+  position: relative;
+}
+#whatIDo .intro h1:before{
+  position: absolute;
+  content: '';
+  height: 5px;
+  background-color: #fff;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+#whatIDo .intro h3{
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+#whatIDo .computer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.computer .left, .computer .right{
+  width: 31%;
+}
+.computer .service{
+  margin-bottom: 5rem;
+  position: relative;
+}
+.computer .service:before, .computer .service:after{
+  position: absolute;
+  content: '';
+  border: 1px solid #fff;
+}
+.computer .left .service:first-of-type::before {
+  top: 10%;
+  left: 35%;
+  width: 65%;  
+}
+.computer .left .service:first-of-type::after {
+  top: 10%;
+  left: 100%;
+  width: 100%;
+  transform: rotate(50deg);
+  transform-origin: left;
+}
+
+
+.computer .left .service:last-of-type::before {
+  top: 10%;
+  left: 35%;
+  width: 65%;  
+}
+.computer .left .service:last-of-type::after {
+  top: 10%;
+  left: 100%;
+  width: 100%;
+  transform: rotate(-50deg);
+  transform-origin: left;
+}
+
+.computer .icon i{
+  border: 1px solid #fff;
+  width: 70px; 
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+.computer h4{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.computer p{
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+
+.computer .right .service{
+  text-align: right;
+}
+.computer .right .service .icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
