@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#wrapper {
+  margin: 2rem;
+}
+p {
+  position: relative;
+  margin: 2rem 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+label {
+  margin-left: 30px;
+  margin-top: 4px;
+  display: inline-block;
+}
+.sameAddress label {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+input[type="checkbox"]:checked ~ .fancy:after,
+input[type="radio"]:checked ~ .fancy:after {
+  display: block;
+}
+.fancy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+input[type="radio"] ~ .fancy {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+input[type="checkbox"] ~ .fancy {
+  width: 70px;
+  height: 40px;
+  border-radius: 50px;
+}
+.fancy:hover {
+  background-color: #ccc;
+}
+input ~ .fancy:after {
+  position: absolute;
+  content: "";
+  background: white;
+  border-radius: 50%;
+}
+input[type="radio"] ~ .fancy:after {
+  display: none;
+  width: 35%;
+  height: 35%;
+  top: 32%;
+  left: 32%;
+}
+input[type="checkbox"] ~ .fancy:after {
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  left: 5px;
+  transition: all 0.25s;
+}
+input[type="checkbox"]:checked ~ .fancy:after{
+    left: 34px;
+}
+input[type="checkbox"]:checked ~ .fancy,
+input[type="radio"]:checked ~ .fancy {
+  background-color: blueviolet;
+}
