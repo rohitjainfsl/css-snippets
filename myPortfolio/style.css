@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body {
+  background-image: url("images/Somesh Portfolio Background.jpg");
+  background-repeat: no-repeat;
+}
+header,
+main,
+footer {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 50px;
+}
+header ul a {
+  padding: 1rem 0.5rem;
+  margin: 0 0.25rem;
+  font-weight: 700;
+  color: #000;
+}
+.d-flex {
+  display: flex;
+}
+#hero {
+  margin-bottom: 2rem;
+  position: relative;
+  color: #002f70;
+}
+#hero .left,
+#hero .right {
+  width: 50%;
+}
+#hero .left h1 {
+  font-size: 3rem;
+  color: #00285f;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#hero .left ul {
+  list-style: disc inside;
+  margin-bottom: 1rem;
+}
+#hero .left ul li {
+  margin: 0 0.5rem;
+}
+#hero .left p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.blue-button {
+  width: 150px;
+  border-radius: 20px;
+  padding: 0.5rem 0;
+  background-color: #0d4189;
+  color: #fff;
+  text-align: center;
+}
+#hero .right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#hero .right img {
+  width: 70%;
+  position: relative;
+  z-index: 1;
+}
+#hero .right .my-photo {
+  position: absolute;
+  width: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  height: 200px;
+  top: 43%;
+  left: 24%;
+}
+#projects {
+  margin-bottom: 2rem;
+}
+#projects h2 {
+  color: #002f70;
+}
+.project-wrapper {
+  flex-wrap: wrap;
+}
+.project {
+  width: 30%;
+  margin: 1rem;
+  border: 1px solid #a1a1a1;
+  border-radius: 0.5rem;
+}
+.project img {
+  height: 200px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.project .project-info {
+  padding: 1rem;
+}
+.project .project-info h3 {
+  margin-bottom: 0.5rem;
+}
+.no-left-space {
+  margin-left: 0 !important;
+}
+
+#educations {
+  margin-bottom: 2rem;
+}
+#educations h2 {
+  color: #002f70;
+}
+.education {
+  width: 30%;
+  margin: 1rem;
+  color: #002f70;
+}
+.education p {
+  font-weight: 500;
+  color: #000;
+}
+
+#skills {
+  margin-bottom: 2rem;
+}
+#skills h2 {
+  color: #002f70;
+}
+.skill-wrapper {
+  flex-wrap: wrap;
+}
+.skill {
+  width: 22%;
+  margin: 1rem;
+}
+.skill .bar {
+  width: 90%;
+  background-color: #e3e3e3;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.skill .bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #87a1c4;
+  z-index: -1;
+}
+
+footer {
+  background-color: #0d4189;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+footer .part {
+  width: 31%;
+  margin: 0 1rem;
+  text-align: center;
+}
+footer .part h2 {
+  margin-bottom: 1rem;
+}
+footer .part p {
+  text-align: justify;
+}
+footer .part.three ul {
+  justify-content: center;
+}
+footer .part.three ul li a {
+  font-size: 2rem;
+  margin: 0 0.25rem;
+  padding: 0 0.25rem;
+  color: #fff;
+}
