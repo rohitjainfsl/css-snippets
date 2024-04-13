@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans, sans-serif;
+}
+#card {
+  background-color: lightblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product {
+  width: 250px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.product .image {
+  width: 100%;
+  height: 70%;
+  padding: 10px 25px;
+}
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product .content {
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  background-color: #fff;
+  box-shadow: -1px 2px 6px 0px rgba(0,0,0,0.2);
+  transition: all 400ms ease-in;
+}
+.product .content header h3 {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+.product .content small {
+  color: #e3e3e3;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.product .content span {
+  display: inline-block;
+  padding: 0 0.15rem;
+}
+.product .content .size-chart span {
+  font-weight: 700;
+}
+.product .content .size-chart span.active {
+  background-color: #178a17;
+  color: #fff;
+}
+.product .content .size-chart, .product .content .color-chart{
+    margin: 0.5rem 0;
+}
+.product .content .color-chart span {
+  height: 20px;
+  width: 20px;
+}
+.product .content .color-chart span:nth-of-type(1) {
+  background-color: yellow;
+}
+.product .content .color-chart span:nth-of-type(2) {
+  background-color: maroon;
+}
+.product .content .color-chart span:nth-of-type(3) {
+  background-color: green;
+}
+.product .content .color-chart span:nth-of-type(4) {
+  background-color: purple;
+}
+.product .content .color-chart span:nth-of-type(5) {
+  background-color: lightblue;
+}
+.product .content a{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    margin: 0.5rem auto;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+.product:hover .content {
+  top: 30%;
+}
